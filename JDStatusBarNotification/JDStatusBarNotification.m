@@ -525,7 +525,7 @@ static CGFloat topBarHeightAdjustedForIphoneX(JDStatusBarStyle *style, CGFloat h
   CGFloat width = MAX(rect.size.width, rect.size.height);
   CGFloat height = MIN(rect.size.width, rect.size.height);
   JDStatusBarStyle *style = self.activeStyle ?: self.defaultStyle;
-  height = MAX(style.heightForStatusBarView, height);
+  height = height > 20 ?: MAX(style.heightForStatusBarView, height);
     
   // adjust position for iOS 7, if statusBar has double height
   CGFloat yPos = 0;
