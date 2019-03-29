@@ -97,6 +97,8 @@ typedef NS_ENUM(NSInteger, JDStatusBarHeightForIPhoneX) {
 /// The corner radius of the progress bar. Default is 0.0
 @property (nonatomic, assign) CGFloat progressBarCornerRadius;
 
+/// The height of the JDStatusBarView. Default is 0.0
+@property (nonatomic, assign) CGFloat heightForStatusBarView;
 #pragma mark iPhone X height
 
 @property (nonatomic, assign) JDStatusBarHeightForIPhoneX heightForIPhoneX;
